@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -47,11 +47,14 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
-        android:background="@android:drawable/screen_background_dark_transparent"
+        android:background="@drawable/curve"
         android:ems="10"
         android:hint="Enter URL"
         android:inputType="textPersonName"
-        android:padding="5dp"
+
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toStartOf="@+id/search_btn"
@@ -61,7 +64,7 @@
     <WebView
         android:id="@+id/web_browser"
         android:layout_width="0dp"
-        android:layout_height="674dp"
+        android:layout_height="671dp"
         android:scrollbars="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
